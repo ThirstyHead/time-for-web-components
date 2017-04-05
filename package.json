@@ -1,0 +1,19 @@
+{
+  "name": "time-for-web-components",
+  "version": "0.1.0",
+  "description": "PRESENTATION: It's Time for Web Components",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThirstyHead/time-for-web-components.git"
+  },
+  "author": "Scott Davis <sdavis@thoughtworks.com>",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/ThirstyHead/time-for-web-components/issues"
+  },
+  "homepage": "https://github.com/ThirstyHead/time-for-web-components#readme"
+}
