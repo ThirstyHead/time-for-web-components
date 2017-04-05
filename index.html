@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>It's Time for Web Components</title>
+    <link rel="stylesheet" href="bower_components/talk-o-vision/talk-o-vision.css">
+    <style>
+      p{
+        width: 75%;
+        text-align: center;
+        padding-left: 12%;
+      }
+
+      .full-height{
+        height: 100vh;
+        /*width: 100vw;*/
+      }
+
+      .full-width{
+        /*height: 100vh;*/
+        width: 100vw;
+      }
+
+      .partial-height{
+        height: 75%;
+        max-height: 75%;
+      }
+
+      .half-img{
+        max-width: 75%;
+        margin-top: 1rem;
+      }
+
+      .top-margin{
+        margin-top: 1rem;
+      }
+
+      .section-title{
+        position: relative;
+        top: 50%;
+        transform: perspective(1px) translateY(-50%);
+      }
+
+      .sub-title{
+        margin: 0;
+        margin-top: -2rem;
+      }
+
+      .title-slide{
+        background: url('slides/title/img/cogs.jpg') no-repeat center center;
+        background-size: contain;
+      }
+
+      .banner {
+        background-color: black;
+        opacity: 0.7;
+        width: 100%;
+      }
+
+      .banner .title {
+        font-size: 1em;
+        text-align: left;
+        padding: 0.5em;
+        padding-left: 20%;
+        padding-right: 20%;
+      }
+
+      .banner .title h1 {
+        font-size: 1.5em;
+        text-transform: none;
+        font-weight: bold;
+      }
+
+      .banner .title h2 {
+        font-size: 1em;
+        text-transform: none;
+        font-style: italic;
+      }
+
+
+      .banner .bio {
+        font-size: 0.5em;
+        text-align: right;
+        padding-right: 20%;
+        padding-bottom: 1em;
+      }
+
+      .banner .bio a{
+        color: white;
+      }
+
+      table th, table td {
+          text-align: left;
+          padding: 0.2em 0.5em 0.2em 0.5em;
+          /*border-bottom: 1px solid;*/
+      }
+      table {
+          margin: auto;
+          padding-left: 20%;
+          border-collapse: collapse;
+          border-spacing: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <ol class="slideshow">
+      <li class="title-slide">
+          <div class="banner">
+            <div class="title">
+              <h1>It's Time for Web Components</h1>
+            </div>
+            <div class="bio">
+              Scott Davis <br>
+              <a href="mailto:sdavis@thoughtworks.com">sdavis@thoughtworks.com</a> <br>
+              <a href="https://twitter.com/scottdavis99?lang=en">@scottdavis99</a>
+            </div>
+          </div>
+      </li>
+
+      <li class="bg-white">
+        <img src="slides/bio/img/scott-davis-bio.png"
+             alt=""
+             class="full-height">
+
+      </li>
+
+
+    </ol>
+
+
+    <script src="bower_components/talk-o-vision/talk-o-vision.js"></script>
+  </body>
+</html>
