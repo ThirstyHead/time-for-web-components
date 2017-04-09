@@ -16,5 +16,35 @@ https://morguefile.com/p/42013
 b/w vertical cogs
 https://morguefile.com/p/976498
 
-beautiful b/w cogs
+** beautiful b/w cogs
 https://morguefile.com/p/1024315
+
+angular component
+https://angular.io/docs/ts/latest/quickstart.html
+
+React
+https://facebook.github.io/react/
+
+ember
+https://emberjs.com/
+
+Polymer
+https://www.polymer-project.org/
+https://www.polymer-project.org/about
+
+Web Components
+https://www.webcomponents.org/
+https://www.webcomponents.org/introduction
+
+W3C
+https://w3c.github.io/webcomponents/spec/custom/
+https://w3c.github.io/webcomponents/spec/shadow/
+https://w3c.github.io/webcomponents/spec/imports/
+https://www.w3.org/TR/html5/single-page.html
+
+
+wikipedia
+https://en.wikipedia.org/wiki/Web_Components
+
+caniuse
+http://caniuse.com/#search=web%20components
