@@ -48,3 +48,7 @@ https://en.wikipedia.org/wiki/Web_Components
 
 caniuse
 http://caniuse.com/#search=web%20components
+
+https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
+
+https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Bento_at_Hanabishi%2C_Koyasan.jpg/1024px-Bento_at_Hanabishi%2C_Koyasan.jpg
