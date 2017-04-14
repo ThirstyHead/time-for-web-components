@@ -60,3 +60,6 @@ https://www.w3.org/TR/html5/
 
 waffles of insane greatness
 http://www.foodnetwork.com/recipes/waffle-of-insane-greatness-recipe
+
+xml wiki
+https://en.wikipedia.org/wiki/XML
