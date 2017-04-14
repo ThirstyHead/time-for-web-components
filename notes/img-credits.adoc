@@ -54,3 +54,9 @@ https://en.wikipedia.org/wiki/Encapsulation_(computer_programming)
 https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Bento_at_Hanabishi%2C_Koyasan.jpg/1024px-Bento_at_Hanabishi%2C_Koyasan.jpg
 
 https://developers.google.com/maps/documentation/javascript/
+
+html5 spec
+https://www.w3.org/TR/html5/
+
+waffles of insane greatness
+http://www.foodnetwork.com/recipes/waffle-of-insane-greatness-recipe

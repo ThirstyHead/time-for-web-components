@@ -101,6 +101,75 @@
       }
 
     </style>
+
+    <!-- Live Code Demo ("tinker") -->
+    <style type="text/css">
+        textarea {
+          width: 75%;
+          height: 45vh;
+          font-size: 1rem;
+        }
+        .output iframe {
+          border: solid 1px white;
+          width: 75%;
+          height: 45vh;
+          font-size: 1rem;
+        }
+
+        .outputFrame {
+          font-size: 1rem;
+        }
+      </style>
+
+      <script>
+        function getIframeDoc(){
+          var iframe = document.querySelector("#outputFrame")
+          var doc = iframe.contentWindow.document
+          return doc
+        }
+        function init() {
+          //add style element to iframe
+          var doc = getIframeDoc()
+          var styleTag = doc.createElement("style");
+          styleTag.id = "styleTag"
+          doc.head.appendChild(styleTag);
+          //add keyup listeners to textareas
+          var html = document.querySelector("#html")
+          html.addEventListener("keyup", keystrokeListener, false)
+          var css = document.querySelector("#css")
+          css.addEventListener("keyup", keystrokeListener, false)
+        }
+        function keystrokeListener(){
+          var doc = getIframeDoc()
+          if ( this.getAttribute('id') === 'html') {
+            doc.body.innerHTML = this.value
+          } else if ( this.getAttribute('id') === 'css'){
+            doc.querySelector("#styleTag").innerHTML = this.value
+          }
+        }
+        function addJavascript(){
+          //delete existing script elements
+          var doc = getIframeDoc()
+          var list = doc.getElementsByTagName("script")
+          for(var i=0; i<list.length; i++){
+            list[i].parentNode.removeChild(list[i])
+          }
+          //get javascript from parent textarea
+          var javascript = document.getElementById("javascript")
+          var src = javascript.value
+          //create new script element
+          var script = doc.createElement("script");
+          script.type = "text/javascript";
+          script.id = "scriptTag"
+          script.appendChild(doc.createTextNode(src))
+          doc.head.appendChild(script);
+        }
+        window.onload = init
+      </script>
+    <!-- Live Code Demo ("tinker") -->
+
+
+
   </head>
   <body>
     <ol class="slideshow">
@@ -223,9 +292,46 @@
         <h2 class="section-title">Web Components ===<br> <span class="highlight">Semantics</span> + <span class="highlight">Encapsulation</span></h2>
       </li>
 
-      <li>
-        html
+      <li class="bg-white">
+        <img src="slides/html5/img/html5-spec.png"
+             alt=""
+             class="full-height">
       </li>
+
+      <li class="bg-white">
+        <img src="slides/html5/img/html5-spec-intro.png"
+             alt=""
+             class="full-height">
+      </li>
+
+      <li>
+        <div>
+            <form>
+              <textarea id="html">
+                Waffles of Insane Greatness
+
+                Ingredients:
+                3/4 cup all-purpose flour
+                1/4 cup cornstarch
+                1/2 teaspoon baking powder
+
+                Directions:
+                In a medium bowl, combine dry ingredients.
+                Add in wet ingredients.
+                Let the batter sit for 30 minutes.
+              </textarea>
+            </form>
+          </div>
+
+          <div class="output">
+            <iframe name="outputFrame"
+                    id="outputFrame"
+                    sandbox="allow-same-origin allow-forms allow-scripts"></iframe>
+          </div>
+      </li>
+
+
+
 
       <li>
         xml
