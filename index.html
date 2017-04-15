@@ -140,49 +140,20 @@
       </style>
 
       <script>
-        function getIframeDoc(){
-          var iframe = document.querySelector("#outputFrame")
-          var doc = iframe.contentWindow.document
-          return doc
-        }
-        function init() {
-          //add style element to iframe
-          var doc = getIframeDoc()
-          var styleTag = doc.createElement("style");
-          styleTag.id = "styleTag"
-          doc.head.appendChild(styleTag);
+        function tinkerInit() {
           //add keyup listeners to textareas
           var html = document.querySelector("#html")
           html.addEventListener("keyup", keystrokeListener, false)
-          var css = document.querySelector("#css")
-          css.addEventListener("keyup", keystrokeListener, false)
         }
         function keystrokeListener(){
-          var doc = getIframeDoc()
           if ( this.getAttribute('id') === 'html') {
+            var iframe = document.querySelector("#outputFrame");
+            var doc = iframe.contentWindow.document;
             doc.body.innerHTML = this.value
-          } else if ( this.getAttribute('id') === 'css'){
-            doc.querySelector("#styleTag").innerHTML = this.value
           }
         }
-        function addJavascript(){
-          //delete existing script elements
-          var doc = getIframeDoc()
-          var list = doc.getElementsByTagName("script")
-          for(var i=0; i<list.length; i++){
-            list[i].parentNode.removeChild(list[i])
-          }
-          //get javascript from parent textarea
-          var javascript = document.getElementById("javascript")
-          var src = javascript.value
-          //create new script element
-          var script = doc.createElement("script");
-          script.type = "text/javascript";
-          script.id = "scriptTag"
-          script.appendChild(doc.createTextNode(src))
-          doc.head.appendChild(script);
-        }
-        window.onload = init
+
+        window.addEventListener('load', tinkerInit);
       </script>
     <!-- Live Code Demo ("tinker") -->
 
