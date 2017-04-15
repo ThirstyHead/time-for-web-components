@@ -63,3 +63,16 @@ http://www.foodnetwork.com/recipes/waffle-of-insane-greatness-recipe
 
 xml wiki
 https://en.wikipedia.org/wiki/XML
+
+orange global
+https://morguefile.com/p/912782
+
+shh
+https://farm4.staticflickr.com/3943/15496243002_6be57a2293_b.jpg
+
+div, span
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
+
+dive into html5
+http://diveintohtml5.info/semantics.html
