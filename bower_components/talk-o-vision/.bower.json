@@ -1,6 +1,6 @@
 {
   "name": "talk-o-vision",
-  "version": "0.2.1",
+  "version": "0.3.1",
   "description": "An HTML-based slideshow framework",
   "main": "index.html",
   "authors": [
@@ -20,14 +20,13 @@
     "test",
     "tests"
   ],
-  "_release": "0.2.1",
+  "_release": "0.3.1",
   "_resolution": {
     "type": "version",
-    "tag": "v0.2.1",
-    "commit": "bf69091bede31a42ff43d7d0617df097d50d2f0d"
+    "tag": "v0.3.1",
+    "commit": "18ab6cd748e775017835ad58d4fda44a0bd30a48"
   },
   "_source": "https://github.com/thirstyhead/talk-o-vision.git",
-  "_target": "^0.2.1",
-  "_originalSource": "thirstyhead/talk-o-vision",
-  "_direct": true
+  "_target": "^0.3.0",
+  "_originalSource": "thirstyhead/talk-o-vision"
 }

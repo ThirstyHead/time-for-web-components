@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "talk-o-vision": "thirstyhead/talk-o-vision#^0.2.1"
+    "talk-o-vision": "thirstyhead/talk-o-vision#^0.3.0"
   }
 }
