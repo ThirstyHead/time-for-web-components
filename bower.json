@@ -1,6 +1,6 @@
 {
   "name": "time-for-web-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PRESENTATION: It's Time for Web Components",
   "main": "index.html",
   "authors": [
@@ -16,6 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "talk-o-vision": "thirstyhead/talk-o-vision#^0.2.1"
+    "talk-o-vision": "thirstyhead/talk-o-vision#^0.3.0"
   }
 }
